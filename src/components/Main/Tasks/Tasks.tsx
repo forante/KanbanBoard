@@ -21,7 +21,7 @@ interface ITaskList {
  const Tasks: FC<ITaskList> = ({data}) => {
   return (
     <>
-      {data.map(item=><Task taskItem = {item.issues[0].name}/>)}
+      {data.map(item=><Task taskItem = {item.issues[0].name} key={item.issues[0].id}/>)}
     </>
   )
 }

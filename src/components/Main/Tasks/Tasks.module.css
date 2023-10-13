@@ -21,7 +21,13 @@
   border-radius: 5px;
 }
 
-.add {
+.input {
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px 8px;
+}
+
+.btn {
   color: #5E6C84;
   background-color: white;
   border-radius: 5px;
@@ -30,9 +36,15 @@
   transition: all 0.2s;
 }
 
-
-.add:hover {
+.btn:hover {
   cursor: pointer;
-  background-color: #a1c6db;
+  background-color: #35a0de;
 }
+
+.submit {
+  color: white;
+  background-color: #0067A3;
+}
+
+
 
