@@ -1,0 +1,38 @@
+.block {
+  border-radius: 10px;
+  background-color: #EBECF0;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+
+}
+
+.block::-webkit-scrollbar {
+  width: 0;
+}
+
+.task {
+  padding: 7px 8px ;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.add {
+  color: #5E6C84;
+  background-color: white;
+  border-radius: 5px;
+  padding: 7px 0 ;
+  max-width: 120px;
+  transition: all 0.2s;
+}
+
+
+.add:hover {
+  cursor: pointer;
+  background-color: #a1c6db;
+}
+

@@ -1,0 +1,26 @@
+.header {
+  height: 55px;
+  background-color: #0067A3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px;
+  color: white;
+}
+
+@media (max-width: 445px) {
+  h1 {
+    display: none;
+  }
+
+  .header { 
+    justify-content: end;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
