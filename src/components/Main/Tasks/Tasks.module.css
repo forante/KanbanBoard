@@ -46,5 +46,24 @@
   background-color: #0067A3;
 }
 
+.arrow {
+  text-align: end;
+  margin-bottom: 5px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.addBlock {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.addBlock .task:hover{
+  cursor: pointer;
+  background-color: #DEDEDE;
+}
+
 
 

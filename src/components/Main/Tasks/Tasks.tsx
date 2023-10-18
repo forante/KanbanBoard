@@ -1,29 +1,16 @@
 import {FC} from 'react'
 import { Task } from './Task';
+import { ITaskList } from './interfaces/interfaces';
 
 
-interface IIssues {
-  id: number;
-  name: string;
-  description?: string;
-}
-
-interface IDataMock {
-  title: string;
-  issues: IIssues[];
-}
-
-interface ITaskList {
-  data: IDataMock[];
-}
-
-
- const Tasks: FC<ITaskList> = ({data}) => {
+ const Tasks: FC<ITaskList> = ({data, setDataArr, cat}) => {
   return (
     <>
-      {data.map(item=><Task taskItem = {item.issues[0].name} key={item.issues[0].id}/>)}
+      {data.map(item=>item.title === cat && <Task taskItem = {item.issues[0].name} taskId = {item.issues[0].id} key={item.issues[0].id}/>)}
     </>
   )
 }
 
 export default Tasks;
+
+

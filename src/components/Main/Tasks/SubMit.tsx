@@ -4,10 +4,11 @@ import classNames from 'classnames'
 
 interface ISubmit {
   submit: ()=>void;
+  value: string;
 }
 
-export const SubMit:FC<ISubmit> = ({submit}) => {
+export const SubMit:FC<ISubmit> = ({submit, value}) => {
   return (
-    <button onClick={submit} className={classNames(styles.btn, styles.submit)}>Submit</button>
+    <button onClick={()=>{value && submit()}} className={classNames(styles.btn, styles.submit)}>Submit</button>
   )
 }
